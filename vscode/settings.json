@@ -1,0 +1,102 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "trailing-spaces.trimOnSave": true,
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "alignment.chars": {
+    ":": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    },
+    "::": {
+      "spaceBefore": 0,
+      "spaceAfter": 0
+    },
+    "=": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    },
+    "=>": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    }
+  },
+  "editor.renderWhitespace": "all",
+  "editor.trimAutoWhitespace": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic
+          // "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "variable.language", // super, this, arguments
+          "entity.other.attribute-name", // attributes in html, jsx, etc.
+          "storage.modifier", //static keyword
+          // "storage.type.function", // function
+          "storage.type.interface",
+          "storage.type.js",
+          "storage.type.class", //class keyword
+          "storage.type.class.js", //class keyword
+          // php
+          "punctuation.section.embedded.begin.php"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["entity.other.attribute-name"],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#b889b8"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json",
+          "keyword.control"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.fontFamily": "Operator Mono SSm Lig",
+  "editor.fontSize": 14,
+  "editor.detectIndentation": false,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "workbench.fontAliasing": "antialiased",
+  "git.enableSmartCommit": true,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontFamily": "OperatorMonoSSmLig Nerd Font Mono",
+  "terminal.integrated.fontWeightBold": "normal",
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDelete": false,
+  "sync.gist": "06f4ffe125c6b64950bd7b7aac48baf9",
+  "workbench.startupEditor": "newUntitledFile",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 0,
+  "editor.minimap.enabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Nord",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "workbench.iconTheme": "eq-material-theme-icons-light",
+  "workbench.colorCustomizations": {}
+}
