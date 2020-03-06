@@ -6,7 +6,7 @@ export PATH=/usr/local/bin/:$PATH
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
 
-export ZSH="/Users/mwang/.oh-my-zsh"
+export ZSH="/Users/$USER/.oh-my-zsh"
 
 local user_symbol="$"
 if [[ $(print -P "%#") =~ "#" ]]; then
